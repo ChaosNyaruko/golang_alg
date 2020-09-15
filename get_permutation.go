@@ -16,6 +16,7 @@ func getPermutation(n int, k int) string {
 }
 
 func helper(nums []int, k int) string {
+	fmt.Println("helper: nums", nums, " k=", k)
 	totalNums := 1
 	// 计算以每个数字开头的序列个数
 	for i := 1; i < len(nums); i++ {
